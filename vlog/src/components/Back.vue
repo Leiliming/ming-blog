@@ -1,26 +1,25 @@
 <template lang="">
-    <div class="video-bg">
-        <video width="320" height="240" autoplay loop muted>
-         <!-- <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4"> -->
-         <source src="../assets/video1.mp4" javascript="video" type="video/mp4">
-       Your browser does not support the video tag.
-       </video>
-    </div>
+  <div class="header-bg"></div>
+  <div class="web-bg"></div>
 </template>
 <script>
-
 export default {};
 </script>
-<style lang="sass" scoped>
-.video-bg
-  position: fixed
-  right: 0
-  top: 0
-  width: 100vw
-  height: 100vh
-  cursor: url('../assetes/s.ico'), default
-  video
-    width: 100%
-    height: 100%
-    object-fit: cover
+<style lang="scss" scoped>
+.header-bg {
+  width: 100%;
+  height: 100vh;
+  // cursor: url("../../assetes/s.ico"), default;
+  background: url("../assets/bg.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
+}
+.web-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  width: 100%;
+  height: 3000px;
+  background: url("https://npm.elemecdn.com/hassan-assets/img/bg_homepage_gray.png");
+}
 </style>
