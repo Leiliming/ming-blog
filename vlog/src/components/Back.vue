@@ -9,7 +9,6 @@ export default {};
 .header-bg {
   width: 100%;
   height: 100vh;
-  // cursor: url("../../assetes/s.ico"), default;
   background: url("../assets/bg.jpg") no-repeat center center fixed;
   background-attachment: fixed;
 }
